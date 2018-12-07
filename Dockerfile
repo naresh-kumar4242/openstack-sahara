@@ -21,5 +21,5 @@ ENV OS_USERNAME admin
 ENV OS_PASSWORD uCsl-39G3XWDNDSfPlgB
 
 RUN go build -o main .
-CMD ["/app/main"]
+ENTRYPOINT ["/app/main"]
 EXPOSE 8090
