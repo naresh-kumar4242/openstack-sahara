@@ -21,5 +21,6 @@ ENV OS_USERNAME admin
 ENV OS_PASSWORD uCsl-39G3XWDNDSfPlgB
 
 RUN go build -o main .
-ENTRYPOINT ["/app/main"] #Using entrypoint instead of cmd in case i need to pass arguments at run-time to main binary 
+#Using entrypoint instead of cmd in case i need to pass arguments at run-time to main binary
+ENTRYPOINT ["/app/main"]  
 EXPOSE 8090
