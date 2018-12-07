@@ -95,7 +95,7 @@ type create_vm struct {
 type Network struct {
 	Uuid string `json:"uuid"`
 }
-
+//ToDO : Divide main function into smaller independent functions 
 func main() {
 	// Download OpenStack RC file v3 from API access page in Dashboard === Then run "source admin-openrc.sh" on the machine where this Go binary will run
 	router := gin.Default()
